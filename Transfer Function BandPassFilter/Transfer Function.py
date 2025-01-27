@@ -22,9 +22,9 @@ class TransferFunction(Scene):
         e=MathTex(r"H(j\omega) = \frac{R}{j\omega L+R+\frac{1}{j\omega C}}")
         magnitude_text=Text("Evaluating the magnitude of the transfer function.",font_size=24).next_to(e,DOWN)
         f=MathTex(r"\left\|H(j\omega)  \right\| = \sqrt{\frac{R}{j\omega L+R+\frac{1}{j\omega C}}\cdot \frac{R}{-j\omega L+R+\frac{1}{-j\omega C}}}")
-        g=MathTex(r"\left\|H(j\omega)  \right\| = \frac{R^{2}}{\sqrt{-j^{2}\omega^2L^{2}+j\omega LR+\frac{j\omega L}{-j\omega C}-j\omega LR+R^{2}+\frac{R}{-j\omega C}+\frac{-j\omega L}{j\omega C}+\frac{R}{j\omega C}+\frac{1}{-j^{2}{\omega^{2}C^{2}}}}}",
+        g=MathTex(r"\left\|H(j\omega)  \right\| = \frac{R}{\sqrt{-j^{2}\omega^2L^{2}+j\omega LR+\frac{j\omega L}{-j\omega C}-j\omega LR+R^{2}+\frac{R}{-j\omega C}+\frac{-j\omega L}{j\omega C}+\frac{R}{j\omega C}+\frac{1}{-j^{2}{\omega^{2}C^{2}}}}}",
                   font_size=24)
-        h=MathTex(r"\left\|H(s)\right\|=\frac{R^{2}}{\sqrt{\omega^2L^{2}+\frac{-2L}{C}+R^{2}+\frac{1}{\omega^{2}C^{2}}}}")
+        h=MathTex(r"\left\|H(s)\right\|=\frac{R}{\sqrt{\omega^2L^{2}+\frac{-2L}{C}+R^{2}+\frac{1}{\omega^{2}C^{2}}}}")
         self.play(Write(a), Write(voltage_divider_text))
         self.wait(1)
         self.play(FadeOut(voltage_divider_text))
